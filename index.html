@@ -7,40 +7,49 @@
     <title>AI French Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI French Poem Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the topic of french poem"
-          autofocus="on"
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Poem will go here...
-        <br />
-        Another poem ...
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI French Poem Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic of french poem"
+            autofocus="on"
+            autocomplete="off"
+            class="topic-input-field"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          Demain, dès l’aube, à l’heure où blanchit la campagne, Je partirai.
+          Vois-tu, je sais que tu m’attends.
+          <br />
+          Oh! je voudrais tant que tu te souviennes Des jours heureux où nous
+          étions amis. En ce temps-là la vie était plus belle, Et le soleil plus
+          brûlant qu’aujourd’hui.
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/punSavitri" target="_blank">Savitri Pun</a>
-      and is
-      <a
-        href="https://github.com/punSavitri/french-poem-generator.git"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://ai-api-frenchpoemgenerator.netlify.app/" target="_blank">
-        hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/punSavitri" target="_blank">Savitri Pun</a>
+        and is
+        <a
+          href="https://github.com/punSavitri/french-poem-generator.git"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://ai-api-frenchpoemgenerator.netlify.app/"
+          target="_blank"
+        >
+          hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
