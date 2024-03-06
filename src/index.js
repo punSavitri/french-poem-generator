@@ -1,7 +1,6 @@
 //alert("Testing!!!!");
 //this function show the response from the API call and embeded on HTML 
 function showPoem(response) {
-  //console.log(response.data.answer);
   //adding typewriter plugin to animate text
   new Typewriter("#poem", {
     strings: response.data.answer,
@@ -19,10 +18,9 @@ function generatePoem(event) {
   //generating the poem based on whatever the user typed in the input field 
   let prompt = `User instruction:Generate a french poem about ${userInstructionInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  console.log("Generating poem...")
-  console.log(`prompt:${prompt}`);
-  console.log(`context:${context}`);
-
+  let poemElement = document.querySelector("#poem")
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="blink">⏳Generating a poem about ${userInstructionInput.value}</div>`;
   //make a call to the API
   axios.get(apiUrl).then(showPoem);
 
